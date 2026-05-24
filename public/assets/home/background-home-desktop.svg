@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900">
+  <defs>
+    <radialGradient id="g1" cx="70%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="100%" stop-color="#0B0D17"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#g1)"/>
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="1" fill="white" opacity="0.8"/>
+  <circle cx="300" cy="120" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="500" cy="80" r="1" fill="white" opacity="0.9"/>
+  <circle cx="700" cy="200" r="1" fill="white" opacity="0.7"/>
+  <circle cx="900" cy="60" r="2" fill="white" opacity="0.5"/>
+  <circle cx="1100" cy="150" r="1" fill="white" opacity="0.8"/>
+  <circle cx="1300" cy="90" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="200" cy="300" r="1" fill="white" opacity="0.7"/>
+  <circle cx="400" cy="250" r="1" fill="white" opacity="0.8"/>
+  <circle cx="600" cy="350" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="800" cy="400" r="1" fill="white" opacity="0.9"/>
+  <circle cx="1000" cy="320" r="1" fill="white" opacity="0.6"/>
+  <circle cx="1200" cy="280" r="2" fill="white" opacity="0.4"/>
+  <!-- Earth-like planet on right -->
+  <circle cx="1050" cy="450" r="320" fill="#1b3a5c" opacity="0.9"/>
+  <circle cx="1050" cy="450" r="320" fill="none" stroke="#2a5a8c" stroke-width="2"/>
+  <!-- Continent shapes -->
+  <ellipse cx="980" cy="380" rx="80" ry="50" fill="#2d6e3a" opacity="0.6" transform="rotate(-20 980 380)"/>
+  <ellipse cx="1080" cy="500" rx="60" ry="40" fill="#2d6e3a" opacity="0.5" transform="rotate(15 1080 500)"/>
+  <!-- Atmosphere glow -->
+  <circle cx="1050" cy="450" r="330" fill="none" stroke="#4a9eff" stroke-width="8" opacity="0.15"/>
+  <circle cx="1050" cy="450" r="340" fill="none" stroke="#4a9eff" stroke-width="4" opacity="0.08"/>
+</svg>
