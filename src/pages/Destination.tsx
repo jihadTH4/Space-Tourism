@@ -4,10 +4,10 @@
 // Shows planet image, description, distance & travel time.
 // ─────────────────────────────────────────────
 
-import { useState } from 'react';
-import { siteData } from '../data';
-import PageHeading from '../components/ui/PageHeading';
-import TabNav from '../components/ui/TabNav';
+import { useState } from "react";
+import { siteData } from "../data";
+import PageHeading from "../components/ui/PageHeading";
+import TabNav from "../components/ui/TabNav";
 
 export default function Destination() {
   const { destinations } = siteData;
@@ -19,8 +19,10 @@ export default function Destination() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/assets/destination/background-destination-mobile.jpg)' }}
-    >
+      style={{
+        backgroundImage:
+          "url(/assets/destination/background-destination-mobile.jpg)",
+      }}>
       <style>{`
         @media (min-width: 768px) {
           .dest-bg { background-image: url(/assets/destination/background-destination-tablet.jpg) !important; }
@@ -32,10 +34,11 @@ export default function Destination() {
 
       <div
         className="dest-bg min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/assets/destination/background-destination-mobile.jpg)' }}
-      >
+        style={{
+          backgroundImage:
+            "url(/assets/destination/background-destination-mobile.jpg)",
+        }}>
         <main className="pt-22 md:pt-34 lg:pt-53 px-6 md:px-9.5 lg:px-41.25 pb-14 md:pb-16 lg:pb-24 flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-20">
-
           {/* ── Page heading (mobile: centered) ── */}
           <div className="text-center md:text-left">
             <PageHeading number="01" title="Pick your destination" />
@@ -56,23 +59,24 @@ export default function Destination() {
 
           {/* ── Right: tabs + content ── */}
           <div className="flex flex-col items-center lg:items-start lg:max-w-111.25 w-full">
-
             {/* Tab navigation */}
-            <TabNav tabs={tabLabels} activeTab={activeIndex} onSelect={setActiveIndex} />
+            <TabNav
+              tabs={tabLabels}
+              activeTab={activeIndex}
+              onSelect={setActiveIndex}
+            />
 
             {/* Destination name */}
             <h2
               key={`name-${activeIndex}`}
-              className="text-white text-[56px] md:text-[80px] lg:text-[100px] font-serif uppercase mt-5 md:mt-8 animate-fade-in-up"
-            >
+              className="text-white text-[56px] md:text-[80px] lg:text-[100px] font-serif uppercase mt-5 md:mt-8 animate-fade-in-up">
               {current.name}
             </h2>
 
             {/* Description */}
             <p
               key={`desc-${activeIndex}`}
-              className="text-[#D0D6F9] text-[15px] md:text-[16px] lg:text-[18px] leading-6.25 md:leading-7 lg:leading-8 text-center lg:text-left font-sans animate-fade-in-up delay-100"
-            >
+              className="text-[#D0D6F9] text-[15px] md:text-[16px] lg:text-[18px] leading-6.25 md:leading-7 lg:leading-8 text-center lg:text-left font-sans animate-fade-in-up delay-100">
               {current.description}
             </p>
 
@@ -87,8 +91,7 @@ export default function Destination() {
                 </p>
                 <p
                   key={`dist-${activeIndex}`}
-                  className="text-white text-[28px] font-serif uppercase animate-fade-in-up"
-                >
+                  className="text-white text-[28px] font-serif uppercase animate-fade-in-up">
                   {current.distance}
                 </p>
               </div>
@@ -99,8 +102,7 @@ export default function Destination() {
                 </p>
                 <p
                   key={`travel-${activeIndex}`}
-                  className="text-white text-[28px] font-serif uppercase animate-fade-in-up"
-                >
+                  className="text-white text-[28px] font-serif uppercase animate-fade-in-up">
                   {current.travel}
                 </p>
               </div>
