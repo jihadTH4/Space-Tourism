@@ -28,12 +28,12 @@ A multi-page space tourism website built as a solution to the [Frontend Mentor S
 
 ### Pages
 
-| Page | Route | Navigation Style |
-|------|-------|-----------------|
-| Home | `/` | — |
+| Page        | Route          | Navigation Style                         |
+| ----------- | -------------- | ---------------------------------------- |
+| Home        | `/`            | —                                        |
 | Destination | `/destination` | Text tabs (Moon / Mars / Europa / Titan) |
-| Crew | `/crew` | Dot selector |
-| Technology | `/technology` | Numbered buttons (1 / 2 / 3) |
+| Crew        | `/crew`        | Dot selector                             |
+| Technology  | `/technology`  | Numbered buttons (1 / 2 / 3)             |
 
 ---
 
@@ -127,6 +127,12 @@ To deploy your own fork:
 
 - **GitHub** — [@jihadTH4](https://github.com/jihadTH4)
 - **Frontend Mentor** — [@jihadTH4](https://www.frontendmentor.io/profile/jihadTH4)
+
+---
+
+## AI Collaboration
+
+Built with Claude as an AI pair-programming assistant. I directed the architecture, reviewed the code, and handled deployment.
 
 ---
 
